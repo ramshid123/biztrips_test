@@ -43,9 +43,8 @@ export default {
   },
   async created() {
     // Supabase project details
-    const supabaseUrl = 'https://powlyrypaysjbqijtryc.supabase.co'
-    const supabaseKey =
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBvd2x5cnlwYXlzamJxaWp0cnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIzODkyMDQsImV4cCI6MjA0Nzk2NTIwNH0.rwmZ7a1Boht-JoYjSp1pUkIJJQYk0R2fi9bDxfyzS4Y'
+    const supabaseUrl = 'SUPABASE_URL'
+    const supabaseKey = 'SUPABASE_API_KEY'
 
     // Initialize Supabase client
     this.supabase = createClient(supabaseUrl, supabaseKey)
