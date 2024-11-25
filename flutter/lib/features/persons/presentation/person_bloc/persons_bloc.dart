@@ -1,8 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fpdart/fpdart.dart';
-import 'package:persons/core/errors/kfailure.dart';
 import 'package:persons/features/persons/domain/entities/person_entity.dart';
 import 'package:persons/features/persons/domain/usecases/add_person.dart';
 import 'package:persons/features/persons/domain/usecases/delete_person.dart';
@@ -47,17 +44,13 @@ class PersonsBloc extends Bloc<PersonsEvent, PersonsState> {
     );
   }
 
-  Future<Either<KFailure, List<PersonEntity>>> _fetchPersonsData() async {
-    await Future.delayed(const Duration(milliseconds: 500));
-    final response = await _useCaseGetAllPersons(UseCaseGetAllPersonsParams());
-    return response;
-  }
-
   Future _onPersonsEventFetchData(
       PersonsEventFetchData event, Emitter<PersonsState> emit) async {
     emit(PersonsStateLoading());
 
-    final response = await _fetchPersonsData();
+    await Future.delayed(const Duration(milliseconds: 500));
+    final response = await _useCaseGetAllPersons(UseCaseGetAllPersonsParams(
+        fromAge: event.fromAge, name: event.name, toAge: event.toAge));
 
     response.fold(
       (l) {

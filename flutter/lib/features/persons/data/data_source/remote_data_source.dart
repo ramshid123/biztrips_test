@@ -1,10 +1,11 @@
+// ignore_for_file: unnecessary_null_comparison
 
 import 'package:persons/core/errors/kustom_exception.dart';
 import 'package:persons/features/persons/data/model/person_model.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 abstract interface class RemoteDataSource {
-  Future<List<PersonModel>> getAllPersons();
+  Future<List<PersonModel>> getAllPersons({int? fromAge, int? toAge, String? name});
 
   Future<void> addPerson(PersonModel personModel);
 
@@ -17,9 +18,15 @@ class RemoteDataSourceImpl implements RemoteDataSource {
   RemoteDataSourceImpl(this.supabaseClient);
 
   @override
-  Future<List<PersonModel>> getAllPersons() async {
+  Future<List<PersonModel>> getAllPersons(
+      {int? fromAge, int? toAge, String? name}) async {
     try {
-      final response = await supabaseClient.from('users').select();
+      final response = await supabaseClient
+          .from('users')
+          .select()
+          .ilike(name == null ? '' : 'name', '%$name%')
+          .gte(fromAge == null ? '' : 'age', fromAge ?? 0)
+          .lte(toAge == null ? '' : 'age', toAge ?? 0);
       return response.map((element) => PersonModel.fromJson(element)).toList();
     } catch (e) {
       throw KustomException(e.toString());

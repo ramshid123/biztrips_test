@@ -13,8 +13,15 @@ class UseCaseGetAllPersons
   @override
   Future<Either<KFailure, List<PersonEntity>>> call(
       UseCaseGetAllPersonsParams params) async {
-    return await remoteRepository.getAllPersons();
+    return await remoteRepository.getAllPersons(
+        fromAge: params.fromAge, name: params.name, toAge: params.toAge);
   }
 }
 
-class UseCaseGetAllPersonsParams {}
+class UseCaseGetAllPersonsParams {
+  final String? name;
+  final int? fromAge;
+  final int? toAge;
+
+  UseCaseGetAllPersonsParams({this.name, this.fromAge, this.toAge});
+}

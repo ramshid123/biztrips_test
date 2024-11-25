@@ -13,8 +13,8 @@ final serviceLocator = GetIt.instance;
 
 Future initDependencies() async {
   final supabaseInstance = await Supabase.initialize(
-    url: 'SUPABASE_URL',
-    anonKey: 'SUPABASE_API_KEY',
+    url: 'https://powlyrypaysjbqijtryc.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBvd2x5cnlwYXlzamJxaWp0cnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIzODkyMDQsImV4cCI6MjA0Nzk2NTIwNH0.rwmZ7a1Boht-JoYjSp1pUkIJJQYk0R2fi9bDxfyzS4Y',
   );
 
   final supabaseClient = supabaseInstance.client;

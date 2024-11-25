@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:/home/user/Desktop/flutter/persons/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
-      jars="/home/user/Desktop/flutter/persons/build/app/intermediates/flutter/release/libs.jar"
-      resolved="__local_aars__:/home/user/Desktop/flutter/persons/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
+      name="__local_aars__:/home/user/Desktop/biztrips_test/flutter/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
+      jars="/home/user/Desktop/biztrips_test/flutter/build/app/intermediates/flutter/release/libs.jar"
+      resolved="__local_aars__:/home/user/Desktop/biztrips_test/flutter/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
-      name="/home/user/Desktop/flutter/persons/android@@:app_links::release"
-      jars="/home/user/Desktop/flutter/persons/build/app_links/.transforms/a9f50a23053769e87dd672c21588430b/transformed/out/jars/classes.jar:/home/user/Desktop/flutter/persons/build/app_links/.transforms/a9f50a23053769e87dd672c21588430b/transformed/out/jars/libs/R.jar"
+      name="/home/user/Desktop/biztrips_test/flutter/android@@:app_links::release"
+      jars="/home/user/Desktop/biztrips_test/flutter/build/app_links/.transforms/b924371b6beeb6072eda9d86ba78d269/transformed/out/jars/classes.jar:/home/user/Desktop/biztrips_test/flutter/build/app_links/.transforms/b924371b6beeb6072eda9d86ba78d269/transformed/out/jars/libs/R.jar"
       resolved="com.llfbandit.app_links:app_links:unspecified"
-      folder="/home/user/Desktop/flutter/persons/build/app_links/.transforms/a9f50a23053769e87dd672c21588430b/transformed/out"
+      folder="/home/user/Desktop/biztrips_test/flutter/build/app_links/.transforms/b924371b6beeb6072eda9d86ba78d269/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -17,10 +17,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/user/Desktop/flutter/persons/android@@:path_provider_android::release"
-      jars="/home/user/Desktop/flutter/persons/build/path_provider_android/.transforms/261cb5921d70f7d5ce82e50c05a96aa2/transformed/out/jars/classes.jar:/home/user/Desktop/flutter/persons/build/path_provider_android/.transforms/261cb5921d70f7d5ce82e50c05a96aa2/transformed/out/jars/libs/R.jar"
+      name="/home/user/Desktop/biztrips_test/flutter/android@@:path_provider_android::release"
+      jars="/home/user/Desktop/biztrips_test/flutter/build/path_provider_android/.transforms/00301a97b6abe854217e35bc2ffd7cf2/transformed/out/jars/classes.jar:/home/user/Desktop/biztrips_test/flutter/build/path_provider_android/.transforms/00301a97b6abe854217e35bc2ffd7cf2/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
-      folder="/home/user/Desktop/flutter/persons/build/path_provider_android/.transforms/261cb5921d70f7d5ce82e50c05a96aa2/transformed/out"
+      folder="/home/user/Desktop/biztrips_test/flutter/build/path_provider_android/.transforms/00301a97b6abe854217e35bc2ffd7cf2/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/user/Desktop/flutter/persons/android@@:shared_preferences_android::release"
-      jars="/home/user/Desktop/flutter/persons/build/shared_preferences_android/.transforms/8c242cc81ff1c7724dae26d9987ddfb5/transformed/out/jars/classes.jar:/home/user/Desktop/flutter/persons/build/shared_preferences_android/.transforms/8c242cc81ff1c7724dae26d9987ddfb5/transformed/out/jars/libs/R.jar"
+      name="/home/user/Desktop/biztrips_test/flutter/android@@:shared_preferences_android::release"
+      jars="/home/user/Desktop/biztrips_test/flutter/build/shared_preferences_android/.transforms/a03028f3f21297f635db18c029c83f23/transformed/out/jars/classes.jar:/home/user/Desktop/biztrips_test/flutter/build/shared_preferences_android/.transforms/a03028f3f21297f635db18c029c83f23/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
-      folder="/home/user/Desktop/flutter/persons/build/shared_preferences_android/.transforms/8c242cc81ff1c7724dae26d9987ddfb5/transformed/out"
+      folder="/home/user/Desktop/biztrips_test/flutter/build/shared_preferences_android/.transforms/a03028f3f21297f635db18c029c83f23/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -43,10 +43,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/user/Desktop/flutter/persons/android@@:url_launcher_android::release"
-      jars="/home/user/Desktop/flutter/persons/build/url_launcher_android/.transforms/3ca2f4e4d9ad11947fd78018ebd2ed00/transformed/out/jars/classes.jar:/home/user/Desktop/flutter/persons/build/url_launcher_android/.transforms/3ca2f4e4d9ad11947fd78018ebd2ed00/transformed/out/jars/libs/R.jar"
+      name="/home/user/Desktop/biztrips_test/flutter/android@@:url_launcher_android::release"
+      jars="/home/user/Desktop/biztrips_test/flutter/build/url_launcher_android/.transforms/e6119488b229adc9c6bacc6d87bb3cde/transformed/out/jars/classes.jar:/home/user/Desktop/biztrips_test/flutter/build/url_launcher_android/.transforms/e6119488b229adc9c6bacc6d87bb3cde/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.urllauncher:url_launcher_android:unspecified"
-      folder="/home/user/Desktop/flutter/persons/build/url_launcher_android/.transforms/3ca2f4e4d9ad11947fd78018ebd2ed00/transformed/out"
+      folder="/home/user/Desktop/biztrips_test/flutter/build/url_launcher_android/.transforms/e6119488b229adc9c6bacc6d87bb3cde/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

@@ -1,11 +1,11 @@
 <lint-module
     format="1"
-    dir="/home/user/Desktop/flutter/persons/android/app"
+    dir="/home/user/Desktop/biztrips_test/flutter/android/app"
     name=":app"
     type="APP"
     maven="android:app:"
     agpVersion="8.1.0"
-    buildFolder="/home/user/Desktop/flutter/persons/build/app"
+    buildFolder="/home/user/Desktop/biztrips_test/flutter/build/app"
     bootClassPath="/home/user/Android/Sdk/platforms/android-34/android.jar:/home/user/Android/Sdk/build-tools/33.0.1/core-lambda-stubs.jar"
     javaSourceLevel="1.8"
     compileTarget="android-34">

@@ -36,7 +36,7 @@ class HomePageWidgets {
                   kHeight(5),
                   Container(
                     width: double.infinity,
-                    padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(5),
@@ -60,7 +60,7 @@ class HomePageWidgets {
                   kHeight(5),
                   Container(
                     width: double.infinity,
-                    padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(5),
@@ -228,6 +228,59 @@ class HomePageWidgets {
       ),
     );
   }
+
+  static Widget textForm({
+    required String hintText,
+    required String innerText,
+    required TextEditingController textController,
+    bool isNum = false,
+  }) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        kText(
+          text: hintText,
+        ),
+        kHeight(2),
+        TextFormField(
+          controller: textController,
+          inputFormatters: isNum
+              ? <TextInputFormatter>[FilteringTextInputFormatter.digitsOnly]
+              : [],
+          keyboardType: isNum ? TextInputType.number : TextInputType.text,
+          decoration: InputDecoration(
+            hintText: innerText,
+            hintStyle: const TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w300,
+            ),
+            border: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: ColorConstants.black.withOpacity(0.3),
+              ),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: ColorConstants.black.withOpacity(0.3),
+              ),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: ColorConstants.black.withOpacity(0.3),
+              ),
+            ),
+          ),
+          validator: (value) {
+            if (value == null || value.isEmpty) {
+              return '';
+            }
+            return null;
+          },
+        ),
+      ],
+    );
+  }
 }
 
 class AddButton extends StatefulWidget {
@@ -334,13 +387,13 @@ class _AddPersonBottomSheetState extends State<AddPersonBottomSheet> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    textForm(
+                    HomePageWidgets.textForm(
                       hintText: 'Name *',
                       innerText: 'What is the name of the person?',
                       textController: nameController,
                     ),
                     kHeight(25),
-                    textForm(
+                    HomePageWidgets.textForm(
                       hintText: 'Age *',
                       innerText: 'What is the age of the person?',
                       textController: ageController,
@@ -379,59 +432,6 @@ class _AddPersonBottomSheetState extends State<AddPersonBottomSheet> {
               )),
         ),
       ),
-    );
-  }
-
-  Widget textForm({
-    required String hintText,
-    required String innerText,
-    required TextEditingController textController,
-    bool isNum = false,
-  }) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        kText(
-          text: hintText,
-        ),
-        kHeight(2),
-        TextFormField(
-          controller: textController,
-          inputFormatters: isNum
-              ? <TextInputFormatter>[FilteringTextInputFormatter.digitsOnly]
-              : [],
-          keyboardType: isNum ? TextInputType.number : TextInputType.text,
-          decoration: InputDecoration(
-            hintText: innerText,
-            hintStyle: const TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w300,
-            ),
-            border: OutlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorConstants.black.withOpacity(0.3),
-              ),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorConstants.black.withOpacity(0.3),
-              ),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorConstants.black.withOpacity(0.3),
-              ),
-            ),
-          ),
-          validator: (value) {
-            if (value == null || value.isEmpty) {
-              return '';
-            }
-            return null;
-          },
-        ),
-      ],
     );
   }
 }

@@ -12,9 +12,9 @@ class RemoteRespositoryImpl implements RemoteRepository {
   RemoteRespositoryImpl(this.remoteDataSource);
 
   @override
-  Future<Either<KFailure, List<PersonModel>>> getAllPersons() async {
+  Future<Either<KFailure, List<PersonModel>>> getAllPersons({int? fromAge, int? toAge, String? name}) async {
     try {
-      return right(await remoteDataSource.getAllPersons());
+      return right(await remoteDataSource.getAllPersons(fromAge: fromAge, name: name, toAge: toAge));
     } on KustomException catch (e) {
       return left(KFailure(e.error));
     }

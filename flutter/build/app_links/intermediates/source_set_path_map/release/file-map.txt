@@ -20,8 +20,8 @@ com.llfbandit.app_links-jetified-lifecycle-viewmodel-savedstate-2.7.0-18 /home/u
 com.llfbandit.app_links-jetified-tracing-1.2.0-19 /home/user/.gradle/caches/transforms-3/fee79d0d8ef3af5dbc14ef6d22d028cf/transformed/jetified-tracing-1.2.0/res
 com.llfbandit.app_links-main-20 /home/user/.pub-cache/hosted/pub.dev/app_links-6.3.2/android/src/main/res
 com.llfbandit.app_links-release-21 /home/user/.pub-cache/hosted/pub.dev/app_links-6.3.2/android/src/release/res
-com.llfbandit.app_links-pngs-22 /home/user/Desktop/flutter/persons/build/app_links/generated/res/pngs/release
-com.llfbandit.app_links-resValues-23 /home/user/Desktop/flutter/persons/build/app_links/generated/res/resValues/release
-com.llfbandit.app_links-mergeReleaseResources-24 /home/user/Desktop/flutter/persons/build/app_links/intermediates/incremental/release/mergeReleaseResources/merged.dir
-com.llfbandit.app_links-mergeReleaseResources-25 /home/user/Desktop/flutter/persons/build/app_links/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-com.llfbandit.app_links-merged_res-26 /home/user/Desktop/flutter/persons/build/app_links/intermediates/merged_res/release
+com.llfbandit.app_links-pngs-22 /home/user/Desktop/biztrips_test/flutter/build/app_links/generated/res/pngs/release
+com.llfbandit.app_links-resValues-23 /home/user/Desktop/biztrips_test/flutter/build/app_links/generated/res/resValues/release
+com.llfbandit.app_links-mergeReleaseResources-24 /home/user/Desktop/biztrips_test/flutter/build/app_links/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.llfbandit.app_links-mergeReleaseResources-25 /home/user/Desktop/biztrips_test/flutter/build/app_links/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.llfbandit.app_links-merged_res-26 /home/user/Desktop/biztrips_test/flutter/build/app_links/intermediates/merged_res/release
